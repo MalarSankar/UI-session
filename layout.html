@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>layout</title>
+    <style>
+        body{
+        background-color:cyan;
+        }
+        .header{
+        background-color:violet;
+        padding:10px;
+        text-align:center
+       }
+       *{
+       box-sizing:border-box;
+       }
+       .column{
+       float:left;
+       width:33.33%;
+       padding:5px;
+
+       }
+       .row::after{
+       content:"";
+       clear:both;
+       display:table;
+       }
+       .footer{
+       position:fixed;
+       left:0;
+       bottom:0;
+       width:100%;
+       background-color:violet;
+       padding:10px;
+       text-align:center;
+       }
+    </style>
+</head>
+<body>
+<div class="header">
+    <h1>FLOWERS</h1>
+</div>
+
+
+<div class="row">
+    <div class="column">
+        <figure>
+            <img src="Rainbow-Rose.jpg" alt="flowers" width="350" height="350">
+            <figcaption>Fig.1 Rainbow Rose</figcaption>
+        </figure>
+    </div>
+    <div class="column">
+         <figure>
+            <img src="sunflower.jpg" alt="flowers" width="350" height="350">
+            <figcaption>Fig.2 sunflower</figcaption>
+        </figure>
+    </div>
+    <div class="column">
+         <figure>
+            <img src="lotus.png" alt="flowers" width="350" height="350">
+            <figcaption>Fig.3 lotus</figcaption>
+        </figure>
+    </div>
+</div>
+<div class="footer">
+    <h2>Address:flower garden,TVM.</h2>
+
+</div>
+
+</body>
+</html>
